@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bf3dhhqxpr6b0"]
+
+[ext_resource type="Script" path="res://TerrainGenerator.gd" id="1_5egew"]
+[ext_resource type="Script" path="res://CameraController.gd" id="1_8t76a"]
+
+[node name="World" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+script = ExtResource("1_8t76a")
+
+[node name="TerrainGenerator" type="Node3D" parent="."]
+script = ExtResource("1_5egew")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]

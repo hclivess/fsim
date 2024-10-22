@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://du3oiiybnm8nc"]
+
+[ext_resource type="Script" path="res://TerrainGenerator.gd" id="1_2f4o2"]
+[ext_resource type="Script" path="res://CameraController.gd" id="2_15u7y"]
+
+[node name="root Node3D" type="Node3D"]
+script = ExtResource("1_2f4o2")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.20562, 6.54569, 1.54871)
+script = ExtResource("2_15u7y")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.82128, 7.5345, 1.83482)
